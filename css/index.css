@@ -330,6 +330,10 @@ section.service {
 		align-items: center;
 		flex-flow: column-reverse wrap;
 		text-align: center;
+		padding: 0;
+	}
+	.logo {
+		margin-top: 20px;
 	}
 	nav {
 		width: 100%;
@@ -351,11 +355,69 @@ section.service {
 	div#intro figure {
 		display: none;
 	}
-	.box {
-		width: 100%;
-		flex-flow: column wrap;
-	}
 }
 @media only screen and (max-width: 500px) {
-
+#container {
+	padding: 0 1%;
+}
+header {
+	padding: 0;
+}
+.logo {
+	margin: 20px 0;
+}
+nav {
+	width: 100%;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-bottom: 20px;
+}
+nav a {
+	font-size: 1.25em;
+	border-top: 1px solid #333;
+	padding: 20px 0;
+	text-align: center;
+	width: 100%;
+}
+nav a:last-child {
+	border-bottom: 1px solid #333;
+}
+div#intro {
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+	margin: 30px auto;
+}
+div.intro {
+	flex-flow: row wrap;
+	max-width: 100%;
+}
+div.intro h1 {
+	max-width: 62%;
+	text-align: center;
+	padding-bottom: 10px;
+}
+div#intro figure {
+	display: none;
+}
+div.content-container {
+	flex-flow: column wrap;
+	max-width: 100%;
+	margin: 0;
+}
+#featured,
+#services,
+#about,
+#product {
+	margin: 30px 0 20px 0;
+}
+#vision {
+	padding-bottom: 30px;
+	margin: 30px 0 0 0;
+}
+.box {
+	line-height: 1.25em;
+}
 }
